@@ -1,0 +1,5 @@
+# do daily/weekly/monthly maintenance
+
+# At 00:01 every day
+# min   hour    day     month   weekday   command
+1       0       *       *       *         /usr/bin/certbot renew --no-self-upgrade --renew-hook /restart-proxy.sh
